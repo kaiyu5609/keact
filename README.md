@@ -1,8 +1,8 @@
-# kreact
+# keact
 
 ## 简介
 
-`kreact` —— 拥有虚拟DOM、组件化、生命周期等功能的轻量UI库。
+`keact` —— 拥有虚拟DOM、组件化、生命周期等功能的轻量UI库。
 - 官网：`--`
 - 文档：`--`
 - 源码：`--`
@@ -11,7 +11,7 @@
 
 ## 安装下载
 
-- 使用`npm`安装：`npm install kreact`
+- 使用`npm`安装：`npm install keact`
 
 ## 快速使用
 
@@ -32,7 +32,7 @@
 <div id="wrapper"></div>
 ```
 ```js
-import { h, render, Component } from 'kreact';
+import { h, render, Component } from 'keact';
 
 class Test extends Component {
     render(props) {
