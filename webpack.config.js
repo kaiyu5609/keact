@@ -7,9 +7,9 @@ var config = {
 	],
 	output: {
 		path: path.resolve(__dirname, 'release/'),
-		filename: 'kreact.js',
+		filename: 'keact.js',
 		publicPath: 'release',
-		library: 'kreact',
+		library: 'keact',
 		libraryTarget: 'umd'
 	},
 	devtool: 'source-map',

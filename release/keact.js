@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["kreact"] = factory();
+		exports["keact"] = factory();
 	else
-		root["kreact"] = factory();
+		root["keact"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -898,19 +898,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.render = exports.Component = exports.flatten = exports.h = undefined;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _h = __webpack_require__(9);
 
 var _component = __webpack_require__(4);
 
 var _render = __webpack_require__(3);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 exports.h = _h.h;
 exports.flatten = _h.flatten;
@@ -922,91 +914,6 @@ exports.default = {
     Component: _component.Component,
     render: _render.render
 };
-
-/*************TEST**************/
-
-var Test = function (_Component) {
-    _inherits(Test, _Component);
-
-    function Test() {
-        _classCallCheck(this, Test);
-
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(Test).apply(this, arguments));
-    }
-
-    _createClass(Test, [{
-        key: 'render',
-        value: function render(props) {
-            return (0, _h.h)(
-                'p',
-                { style: props.style },
-                'TEST_COMPONENT'
-            );
-        }
-    }]);
-
-    return Test;
-}(_component.Component);
-
-var Clock = function (_Component2) {
-    _inherits(Clock, _Component2);
-
-    function Clock(props) {
-        _classCallCheck(this, Clock);
-
-        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(Clock).call(this));
-
-        _this2.state = {
-            count: 1
-        };
-        return _this2;
-    }
-
-    _createClass(Clock, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            console.log('mounted!');
-        }
-    }, {
-        key: 'componentDidUpdate',
-        value: function componentDidUpdate() {
-            console.log('updated!');
-        }
-    }, {
-        key: 'clickHandler',
-        value: function clickHandler(ev) {
-            var count = this.state.count;
-            this.setState({
-                count: ++count
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render(props, state) {
-            // console.log(props);
-            var time = new Date().toLocaleTimeString();
-
-            return (0, _h.h)(
-                'div',
-                { style: { color: 'orange', cursor: 'pointer' }, onClick: this.clickHandler.bind(this) },
-                (0, _h.h)(Test, { style: { color: 'white' } }),
-                (0, _h.h)(
-                    'p',
-                    null,
-                    time + ' <' + state.count + '>'
-                )
-            );
-        }
-    }]);
-
-    return Clock;
-}(_component.Component);
-
-// console.log(<Clock />);
-
-var data = [{ name: 'dhuang' }];
-
-(0, _render.render)((0, _h.h)(Clock, { data: data }), document.querySelector('#wrapper'));
 
 /***/ }),
 /* 9 */
@@ -1245,4 +1152,4 @@ function setAccessor(node, name, old, value) {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=kreact.js.map
+//# sourceMappingURL=keact.js.map
