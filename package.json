@@ -1,0 +1,31 @@
+{
+  "name": "kreact",
+  "version": "0.0.1",
+  "description": "",
+  "main": "webpack.config.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "jest": {
+    "testRegex": "/test/.*.test.js$",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1"
+  },
+  "dependencies": {
+    "user": "0.0.0"
+  }
+}

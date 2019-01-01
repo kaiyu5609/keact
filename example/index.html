@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kreact</title>
+    <style>
+        #wrapper {
+            margin-top: 50px;
+            padding: 5px;
+            background-color: darkslateblue;
+        }
+        #wrapper p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper"></div>
+    
+    <script src="../release/kreact.js"></script>
+    <script>
+        console.log(kreact);
+        var h = kreact.h;
+        var flatten = kreact.flatten;
+
+
+        // var r = kreact.h('div', {
+        //     key: 0, id: 'main', class: 'wrapper'
+        // }, 'Hello!');
+
+        // var r = h('foo', null, h('bar'), h('baz'));
+
+        // const m = x => h(x);
+
+        // var r = h('foo', null, m('a'), [m('b'), m('c')], m('d'))
+        // var r = h('foo', null, h('bar'), h('baz', null, h('test')));
+        // var r = h('foo', null, h('bar'), [
+        //     h('baz', null, h('test'))
+        // ]);
+        // var r = h('foo', null, 'one', 'two', h('bar'), 'three', h('baz'), h('baz'), 'four', null, 'five', 'six');
+        // var Component = ({ children }) => children;
+        // var r = h(Comment, null, 'x', 'y');
+
+        // console.log(r);
+
+        // var r = flatten('a', ['b', 'c'], 'd');
+        // var r = flatten(['a', ['b', 'c'], 'd']);
+        // var r = flatten([['a', ['b', 'c'], 'd']]);
+        // console.log(r);
+
+    
+    
+    </script>
+</body>
+</html>
